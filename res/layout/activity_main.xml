@@ -1,0 +1,46 @@
+<LinearLayout
+    android:id="@+id/rootview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:text="第一种日期选择器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        />
+
+    <com.example.wheelview.loopview.LoopView
+        android:layout_marginTop="50dp"
+        android:id="@+id/loopView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:awv_textsize="18"
+        />
+
+    <Button
+        android:text="滚动的选择器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        />
+
+    <Button
+        android:text="对话框样式的选择器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        />
+    <Button
+            android:text="第二种日期选择器"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+        >
+
+    <TextView
+            android:id="@+id/tv_data_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="日期选择器"
+            android:textSize="22sp"
+            android:gravity="center"
+            />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            >
+        <com.example.wheelview.loopview.LoopView
+                android:id="@+id/loopView_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:awv_textsize="18"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="年"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffec6f1a"
+                />
+
+        <com.example.wheelview.loopview.LoopView
+                android:id="@+id/loopView_mooth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:awv_textsize="18"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="月"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffec6f1a"
+                />
+
+        <com.example.wheelview.loopview.LoopView
+                android:id="@+id/loopView_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:awv_textsize="18"
+                />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="日"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffec6f1a"
+                />
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:onClick="selectData"
+            />
+
+
+</LinearLayout>
